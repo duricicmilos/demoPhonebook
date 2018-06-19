@@ -1,0 +1,30 @@
+<h1>Add/edit user</h1>
+
+<form class="form-horizontal" ng-init="initItem()">
+	<div class="form-group">
+		<div class="col-ld-2 right">
+			<label>First name</label>
+		</div>
+		<div class="col-ld-6">
+			<input ng-model="item.firstname" class="form-control" type="text" />
+		</div>
+		<div class="col-ld-2">
+			<label>Last name</label>
+		</div>
+		<div class="col-ld-6">
+			<input ng-model="item.lastname" class="form-control" type="text" />
+		</div>
+		<div class="col-ld-2">
+			<label>Number</label>
+		</div>
+		<div class="col-ld-6">
+			<input ng-model="item.number" class="form-control" type="text" />
+		</div
+	</div>
+	<br>
+	<div class="form-group">
+		<div class="col-ld-2 col-ld-offset-2">
+			<button ng-disabled="!item.firstname || !item.lastname || !item.number" ng-click="saveItem()" class="btn btn-sm btn-default">Save</button>
+		</div>
+	</div>
+</form>
